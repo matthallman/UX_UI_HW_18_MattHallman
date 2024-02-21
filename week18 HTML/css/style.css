@@ -18,7 +18,7 @@ body {
 }
 
 .flexContainer div {
-    width: 30%; /* Set width of each skill box */
+    width: 33%; /* Set width of each skill box */
     padding: 20px;
     margin: 10px;
     background-color: #f0f0f0;
