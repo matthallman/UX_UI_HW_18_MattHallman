@@ -143,6 +143,24 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+ .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: rgb(238, 233, 233);
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+   .preloader img {
+    animation: spin 3s ease;
+    transition: all;
+    width: 280px;
+    margin: 0 auto;
+  }
+
 @media only screen and (max-width: 600px) {
     /* Mobile media query styles */
     .flexContainer {
@@ -163,3 +181,14 @@ nav ul li a:hover {
         grid-template-rows: auto auto auto auto; /* Set rows for mobile views */
     }
 }
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
